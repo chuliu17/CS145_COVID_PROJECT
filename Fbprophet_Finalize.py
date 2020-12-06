@@ -59,7 +59,7 @@ def get_bestParameters(df, all_params):
     # Use cross validation to evaluate all parameters
     for params in all_params:
         m = Prophet(**params).fit(df)  # Fit model with given params
-        df_cv = cross_validation(m, initial='60 days', period='30 days', horizon = '30 days')
+        df_cv = cross_validation(m, initial='30 days', period='30 days', horizon = '30 days')
         df_p = performance_metrics(df_cv, rolling_window=1)
         mape = df_p['mape'].values[0]
         mapes.append(mape)
