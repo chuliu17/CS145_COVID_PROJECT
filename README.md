@@ -1,0 +1,7 @@
+# COVID19 PREDICTION PROJECT
+## UCLA CS 145 TEAM 17
+
+Team Leader: 
+
+Team Members: 
+
